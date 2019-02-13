@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Label ordering must match values -->
+    <array name="pref_tag_option_labels">
+        <item>@string/pref_tag_label_most_popular</item>
+        <item>@string/pref_tag_label_top_rated</item>
+        <item>@string/pref_tag_label_favorites</item>
+    </array>
+
+    <array name="pref_tag_option_values">
+        <item>@string/pref_category_most_popular_value</item>
+        <item>@string/pref_category_top_rated_value</item>
+        <item>@string/pref_category_favorites_value</item>
+    </array>
+</resources>

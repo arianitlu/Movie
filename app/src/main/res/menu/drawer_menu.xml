@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_most_popular"
+            android:title="Most popular" />
+        <item
+            android:id="@+id/nav_top_rated"
+            android:icon="@drawable/ic_chat_bubble"
+            android:title="Top rated" />
+        <item
+            android:id="@+id/nav_my_favorites"
+            android:icon="@drawable/ic_profile"
+            android:title="My favourites" />
+    </group>
+
+    <item android:title="Genres">
+        <menu>
+            <item
+                android:id="@+id/nav_action"
+                android:icon="@drawable/ic_action_a"
+                android:title="Action"/>
+            <item
+                android:id="@+id/nav_animation"
+                android:icon="@drawable/ic_profile"
+                android:title="Animation"/>
+            <item
+                android:id="@+id/nav_comedy"
+                android:icon="@drawable/ic_comedy"
+                android:title="Comedy"/>
+            <item
+                android:id="@+id/nav_drama"
+                android:icon="@drawable/ic_drama"
+                android:title="Drama"/>
+            <item
+                android:id="@+id/nav_science_fiction"
+                android:icon="@drawable/ic_science_fiction"
+                android:title="Science Fiction"/>
+            <item
+                android:id="@+id/nav_horror"
+                android:icon="@drawable/ic_horror"
+                android:title="Horror"/>
+
+        </menu>
+    </item>
+
+</menu>

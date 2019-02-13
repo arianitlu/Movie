@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swap_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView"
+        tools:context="helo.niti.movies.SwapActivity" />
+
+    <ImageView
+        android:id="@+id/swap_dislike"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/ic_dislike"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="@+id/swap_recyclerview" />
+
+    <ImageView
+        android:id="@+id/swap_like"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="42dp"
+        android:src="@drawable/ic_like"
+        ads:layout_constraintBottom_toBottomOf="@+id/swap_dislike"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintTop_toTopOf="@+id/swap_dislike" />
+
+    <ImageView
+        android:id="@+id/swap_swap"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_swipe"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="@+id/swap_recyclerview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="SWIPE"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        ads:layout_constraintEnd_toEndOf="@+id/swap_swap"
+        ads:layout_constraintStart_toStartOf="@+id/swap_swap"
+        ads:layout_constraintTop_toBottomOf="@+id/swap_swap" />
+
+    <TextView
+        android:id="@+id/txt_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="LIKE"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        ads:layout_constraintEnd_toEndOf="@+id/swap_like"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="@+id/swap_like"
+        ads:layout_constraintTop_toBottomOf="@+id/swap_like" />
+
+    <TextView
+        android:id="@+id/txt_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISLIKE"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:visibility="invisible"
+        ads:layout_constraintBottom_toBottomOf="@+id/txt_like"
+        ads:layout_constraintEnd_toEndOf="@+id/swap_dislike"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintStart_toStartOf="@+id/swap_dislike"
+        ads:layout_constraintTop_toTopOf="@+id/txt_like"
+        ads:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
+
